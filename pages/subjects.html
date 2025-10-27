@@ -1,8 +1,125 @@
 <!DOCTYPE html>
 <html>
+    <head>
+    <title> AD Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    body {
+    background-image: url('images/bg1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+    </style>
+
+    <style>
+    #overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 80%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 250px;
+ 
+    bottom: 0;
+    background-color: rgba(88, 86, 86, 0.5); /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    }
+    </style>
+    <div id="overlay"></div>
+
+    <style>
+    .content-wrapper {
+    /* **KEY 1: Match the centering of the overlay** */
+    position: relative; /* Needed for z-index */
+    width: 80%; /* Match the overlay's width */
+    left: 0px;
+    right: auto;
+    margin: auto; /* Center the content wrapper */
+    
+    /* **KEY 2: Ensure content is on top** */
+    z-index: 2; /* Must be higher than #overlay's z-index (1) */
+    
+    /* Optional: Keep your padding and styling */
+    padding: 20px;
+    color: white; 
+}
+    </style>
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 20px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
+
+    </head>
 <body>
 
-<h1>Under Construction</h1>
+    <div class="sidenav">
+        <a href="pages/about.html">About</a>
+        <a href="pages/subjects.html">Subjects</a>
+        <a href="pages/tips.html">Tips</a>
+        <a href="pages/contact.html">Contact</a>
+    </div>
+
+    <div class = "main">
+        <div class = "content-wrapper">
+
+            <h1>Subjects</h1>
+
+                <h2>Currently <i>Project AD</i> covers:</h2>
+
+                <h2><i>Math</i></h2>
+
+                    <p>
+
+                    <a href="math10c-starting-page.html">Math 10C</a><br><br>
+
+                    
+                    <a href="math20ib-starting-page.html">Math 20 and 20IB</a><i> (Disclaimer: this section meshes both IB and non-IB subjects togther.
+                        We have done our best to try to seperate them but some IB topics need to be learned in the right order so there may be IB subjects
+                        that appear in the middle of a unit and then never reappear again)</i>
+
+                    </p><br>
+
+            <p>This website is still under construcion.</p>
+
+            <i>Background: Honkai Impact 3, Vol 2, all right reserved mihoyo</i>
+        </div>
+    </div>
+
 
 </body>
 </html>
