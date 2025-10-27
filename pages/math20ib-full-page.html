@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> AD Home</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    body {
+    background-image: url('../images/ace-combat-miku.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+    </style>
+
+    <style>
+    #overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 80%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 250px;
+ 
+    bottom: 0;
+    background-color: rgba(88, 86, 86, 0.5); /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    }
+    </style>
+    <div id="overlay"></div>
+
+    <style>
+    .content-wrapper {
+    /* **KEY 1: Match the centering of the overlay** */
+    position: relative; /* Needed for z-index */
+    width: 80%; /* Match the overlay's width */
+    left: 0px;
+    right: auto;
+    margin: auto; /* Center the content wrapper */
+    
+    /* **KEY 2: Ensure content is on top** */
+    z-index: 2; /* Must be higher than #overlay's z-index (1) */
+    
+    /* Optional: Keep your padding and styling */
+    padding: 20px;
+    color: white; 
+}
+    </style>
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 20px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
+
+    </head>
+<body>
+
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="tips.html">Tips</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class = "main">
+        <div class = "content-wrapper">
+
+            <h1><i>Project AD</i> Math 20/20IB Section</h1>
+            
+            <h2>What is Math 20?</h2>
+            <p>Math 20 is the second mathematics course in high school
+              and is a prerequisite for Math 30. In the case of IB students, 
+              Math 20IB is a prerequisite for Math 30 SL and HL, and also Math 25 HL.
+              
+            </p>
+            <br>
+            <h2>What's in Math 20?</h2>
+            <p><i>Note: IB topics will appear not in their own section, ergo they will appear in the middle of non-IB topics. 
+              This is because in most cases it makes sense to learn it there.</i>
+              <br>
+            <p>Math 10C goes over six (6) units; 
+                <button onclick="location.href='#quadratics'" class="scroll-button">quadratic functions and equations, </button>
+                <button onclick="location.href='#systems'" class="scroll-button">systems of equations and inequalities, </button>
+                <button onclick="location.href='#sequences-and-series'" class="scroll-button">sequences and series, </button>
+                <button onclick="location.href='#radicals-and-absolute-values'" class="scroll-button">radicals and absolute values, </button>
+                <button onclick="location.href='#rationals-and-reciprocals'" class="scroll-button">rationals and reciprocals, </button>and 
+                <button onclick="location.href='#reasoning-and-trigonometry'" class="scroll-button">reasoning and trigonomtery.</button>
+            <br>
+
+
+            <section id="quadratics">
+
+
+            <section id="systems">
+
+
+            <section id="sequences-and-series">
+
+
+            <section id="radicals-and-absolute-values">
+
+
+            <section id="rationals-and-reciprocals">
+
+
+            <section id="reasoning-and-trigonometry".
