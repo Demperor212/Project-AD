@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> AD Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    body {
+    background-image: url('images/bg1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+    </style>
+
+    <style>
+    #overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 80%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 250px;
+ 
+    bottom: 0;
+    background-color: rgba(88, 86, 86, 0.5); /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    }
+    </style>
+    <div id="overlay"></div>
+
+    <style>
+    .content-wrapper {
+    /* **KEY 1: Match the centering of the overlay** */
+    position: relative; /* Needed for z-index */
+    width: 80%; /* Match the overlay's width */
+    left: 0px;
+    right: auto;
+    margin: auto; /* Center the content wrapper */
+    
+    /* **KEY 2: Ensure content is on top** */
+    z-index: 2; /* Must be higher than #overlay's z-index (1) */
+    
+    /* Optional: Keep your padding and styling */
+    padding: 20px;
+    color: white; 
+}
+    </style>
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 20px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
+
+    </head>
+<body>
+
+    <div class="sidenav">
+        <a href="pages/about.html">About</a>
+        <a href="pages/subjects.html">Subjects</a>
+        <a href="pages/tips.html">Tips</a>
+        <a href="pages/contact.html">Contact</a>
+    </div>
+
+    <div class = "main">
+        <div class = "content-wrapper">
+
+            <h1><i>Project AD</i> Math 10C Section</h1>
+            
+            <h2>What is Math 10C?</h2>
+            <p>Math 10C is the first mathematics course 
+                in high school (in Alberta anyway) and is 
+                a prerequisite to Math 20 and Math 20IB.
+            </p>
+
+            <h2>What's in Math 10C?</h2>
+            <p>Math 10C goes over three (3) main subjects; 
+                <a href="#relations-and-functions" class="scroll-link">relations and functions,</a>
+                <a href="#measurement-and-trigonometry" class="scroll-link"> measurement and trigonometry,</a>
+                <a href="#algebra" class = "scroll-link"> and algebra.</a>
+            </p>
+
+
+            <section id = "relations-and-functions">
+                <h1>Relations and functions</h1>
+                <p><i>Here are the topics you will usually encounter relating to relations and functions:</i></p>
+                <dl>
+                    <dt><b><a href="#graphing" class="scroll-link">Graphing</a></b></dt>
+                    <dd>Graph without the use of a graphical calculator a set of data and determine the domain and range of a graph.
+                        Determine slope and/or the equation of a given graph.
+                    </dd>
+                    <dt><b><a href="#relations-vs-functions" class="scroll-link">Relations vs functions</a></b></dt>
+                    <dd>There is a difference between relations and functions, in wich all functions are relations but not all relations are functions.
+                        You will learn to identify which is which.
+                    </dd>
+                    <dt><b><a href="#linear-relations" class="scroll-link">Linear relations</a></b></dt>
+                    <dd>A direct and constant relationship between two variables, where a change in one variable produces a proportional change in the other, 
+                        resulting in a straight line when graphed. You wil learn about the different forms of linear equations and the relationship between two 
+                        linear equations. </dd>
+                </dl>
+                <p><i>Of course, that's not an exhaustive list because there's more specific units within eachh topic.</i></p>
+
+                <section id="graphing">
+                    <h2>This is the graphing section.</h2>
+                    <p>This is where the content goes!</p>
+                </section>
+
+                <section id="relations-vs-functions">
+                    <h2>This is the relations and functions section.</h2>
+                    <p>This is where the content goes!</p>
+                </section>
+
+                <section id="linear-relations">
+                    <h2>This is the linear relations section.</h2>
+                    <h3>We probably should've put this one as relations and functions since it's the same thing. Kinda.</h3>
+                    <p>This is where the content goes!</p>
+                </section>
+            </section>
+
+
+
+
+
+            <section id = "measurement-and-trigonometry">
+                <h1>Measurement and trigonometry</h1>
+                <p><i>Here are the topics you will usually encounter relating to measurement and trigonometry:</i></p>
+                <dl>
+                    <dt><b><a href="#imperial-vs-metric-units" class="scroll-link">Imperial vs Metric units</a></b></dt>
+                    <dd>Comparison between the two measurement systems and their conversions, incuding solving problems 
+                        that require a conversion to be done.
+                    </dd>
+                    <dt><b><a href="#surface-area-and-volume" class="scroll-link">Surface area and volume</a></b></dt>
+                    <dd>Find the surface area and/or volume of certain objects, sometimes with conversions being required.
+                    </dd>
+                    <dt><b><a href="#trigonometry" class="scroll-link">Trigonometry</a></b></dt>
+                    <dd>A branch of mathematics focused on the relationships between the angles and side lengths of triangles, 
+                        particularly right-angled triangles in the case of Math 10C. Includes trigonometric 
+                        functions sine, cosine, and tangent.</dd>
+                </dl>
+                <p><i>Of course, that's not an exhaustive list because there's more specific units within each topic.</i></p>
+                <p><i>Also, it is highly unlikely that you will be unfamiliar with the acronym SOHCAHTOA after this unit.</i></p>
+                
+                <section id="imperial-vs-metric-units">
+                    <h2>This is the Imperial vs Metric units section.</h2>
+                    <p>This is where the content goes!</p>
+                </section>
+
+                <section id="surface-area-and-volume">
+                    <h2>This is the surface area and volume section.</h2>
+                    <p>This is where the content goes!</p>
+                </section>
+
+                <section id="trigonometry">
+                    <h2>This is the trigonometry section.</h2>
+                    <p>This is where the content goes!</p>
+                </section>
+            </section>
+            
+
+
+
+             <section id = "algebra">
+                <h1>Measurement and trigonometry</h1>
+                <p><i>Here are the topics you will usually encounter relating to algebra:</i></p>
+                <dl>
+                    <dt><b><a href="#polynomials" class="scroll-link">Polynomials</a></b></dt>
+                    <dd>Algebraic expressions containing variables, coefficients, exponents and constants.
+                    </dd>
+                    <dt><b><a href="#factoring" class="scroll-link">Factoring</a></b></dt>
+                    <dd>The next part of polynomials where you break down a polynomial into its factors.
+                        Also includes expansions, the reverse of factoring.
+                    </dd>
+                    <dt><b><a href="#roots-and-powers" class="scroll-link">Roots and powers</a></b></dt>
+                    <dd>These are inverse operations of each other. An exponent (or power) indicates 
+                        repeated multiplication of a base number, while a root finds a number that, 
+                        when multiplied by itself a certain number of times, results in the original number.</dd>
+                </dl>
+                <p><i>Of course, that's not an exhaustive list because there's more specific units within each topic.</i></p>
+
+
+
+                <section id="polynomials">
+                    <h2>This is the polynomials section.</h2>
+                    <p>This is where the content goes!</p>
+                </section>
+
+                <section id="factoring">
+                    <h2>This is the factoring section.</h2>
+                    <p>This is where the content goes!</p>
+                </section>
+
+                <section id="roots-and-powers">
+                    <h2>This is the roots and powers section.</h2>
+                    <p>This is where the content goes!</p>
+                </section>
+            </section>
+
+
+            <p>This website is still under construcions.</p>
+
+
+
+            <i>Background: Honkai Impact 3, Vol 2, all rights reserved Mihoyo</i>
+        </div>
+    </div>
+
+
+</body>
+</html>
