@@ -14,106 +14,10 @@
     }
     </style>
 
-    <style>
-    #overlay {
-    position: fixed; /* Sit on top of the page content */
-    width: 80%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 250px;
-    transition: width 0.3s; /* Smooth width change */
- 
-    bottom: 0;
-    background-color: rgba(88, 86, 86, 0.5); /* Black background with opacity */
-    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
-    }
-    </style>
 
+    <link rel="stylesheet" href="../css/styles.css">
 
-    <style>
-    .content-wrapper {
-    /* **KEY 1: Match the centering of the overlay** */
-    position: relative; /* Needed for z-index */
-    width: 80%; /* Match the overlay's width */
-    left: 0px;
-    right: auto;
-    margin: auto; /* Center the content wrapper */
     
-    /* **KEY 2: Ensure content is on top** */
-    z-index: 2; /* Must be higher than #overlay's z-index (1) */
-    
-    /* Optional: Keep your padding and styling */
-    padding: 20px;
-    color: white; 
-}
-    </style>
-
-    <style>
-        .sidenav {
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
-            transition: width 0.3s; /* Smooth width change */
-        }
-
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        .main {
-            margin-left: 160px; /* Same as the width of the sidenav */
-            font-size: 20px; /* Increased text to enable scrolling */
-            padding: 0px 10px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-
-        .main.shifted {
-            margin-left: 0; /* Move content to the far left */
-        }
-
-        .sidenav.closed {
-            width: 0; /* Shrink the sidebar */
-            padding-top: 40px; /* Keep padding, but links will be hidden by overflow-x: hidden */
-        }
-
-        #overlay.shifted-overlay {
-            left: 80px; /* Move the overlay to the far left */
-            width: 90%; /* Change width to fill entire viewport */
-        }
-
-        .toggle-btn {
-            position: fixed;
-            top: 5px;
-            left: 5px;
-            
-            /* FIX 1: Set a high z-index (Sidebar is likely z-index: 3 or 10) */
-            z-index: 999; 
-            
-            font-size: 24px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            color: #fff; 
-        }
-    </style>
 
     </head>
 <body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AD Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <style>
+            body {
+                background-image: url('images/bg1.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: cover;
+            }
+            #overlay {
+                position: fixed;
+                width: 80%;
+                height: 100%;
+                top: 0;
+                left: 250px;
+                bottom: 0;
+                background-color: rgba(88, 86, 86, 0.5);
+                z-index: 1;
+            }
+            .content-wrapper {
+                position: relative;
+                width: 80%;
+                left: 0px;
+                right: auto;
+                margin: auto;
+                z-index: 2;
+                padding: 20px;
+                color: white; 
+            }
+            .sidenav {
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+                transition: width 0.3s; /* Smooth transition for width */
+            }
+            .sidenav.collapsed {
+                width: 50px; /* Width when collapsed */
+            }
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            .main {
+                margin-left: 160px;
+                font-size: 20px;
+                padding: 0px 10px;
+                transition: margin-left 0.3s; /* Smooth transition for margin */
+            }
+            .main.collapsed {
+                margin-left: 50px; /* Adjust margin when sidenav is collapsed */
+            }
+            .toggle-btn {
+                position: absolute;
+                top: 20px;
+                left: 160px; /* Align with the sidenav */
+                background-color: #111;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 20px;
+                z-index: 2; /* Above the sidenav */
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+        </style>
+    </head>
+<body>
+
+    <button class="toggle-btn" onclick="toggleSidenav()">&#x25B6;</button> <!-- Arrow button for toggling -->
+
+    <div class="sidenav" id="sidenav">
+        <a href="pages/about.html">About</a>
+        <a href="pages/subjects.html">Subjects</a>
+        <a href="pages/tips.html">Tips</a>
+        <a href="pages/contact.html">Contact</a>
+    </div>
+
+    <div class="main" id="main">
+        <div class="content-wrapper">
+            <h1>Welcome to Project AD!</h1>
+            <p>This is a website for learning in Alberta, Canada. The authors want the junior-high
+                students to have a grasp of how high school feels like / the high school students who
+                need academic help to get help.
+            </p>
+            <p>This website is still under construction.</p>
+            <i>Background: Honkai Impact 3, Vol 2, all rights reserved mihoyo</i>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

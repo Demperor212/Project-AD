@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
 <body>
 
-    <h1>About</h1>
-    <p>After the Alberta Teacher's Strike, our team have realized the importance
-        of having a learning website tailored for Alberta students so that students could
-        have a better time self-tutoring. We also have long realized the lack of support
-        for new-comer high schoolers and junior-high students currently considering 
-        various high school programs. We hope that our website could help ease this 
-        issue a bit.
-    </p>
+    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+
+    <div id="overlay"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="tips.html">Tips</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div id="mainContent" class = "main">
+        <div class = "content-wrapper">
+
+            <h1>About</h1>
+            <p>After the Alberta Teacher's Strike, our team have realized the importance
+                of having a learning website tailored for Alberta students so that students could
+                have a better time self-tutoring. We also have long realized the lack of support
+                for new-comer high schoolers and junior-high students currently considering 
+                various high school programs. We hope that our website could help ease this 
+                issue a bit.
+            </p>
+
+
+        </div>
+    </div>
+
+        <script>
+    function toggleNav() {
+        const nav = document.getElementById("mySidenav");
+        const content = document.getElementById("mainContent");
+        const overlay = document.getElementById("overlay");
+
+        // Check if the sidebar is currently NOT closed
+        if (!nav.classList.contains("closed")) {
+            // --- COLLAPSE ---
+            nav.classList.add("closed");
+            content.classList.add("shifted");
+            overlay.classList.add("shifted-overlay");
+        } else {
+            // --- EXPAND ---
+            nav.classList.remove("closed");
+            content.classList.remove("shifted");
+            overlay.classList.remove("shifted-overlay");
+        }
+    }
+    </script>
 
 </body>
 </html>

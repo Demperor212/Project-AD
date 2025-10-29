@@ -1,0 +1,79 @@
+body {
+    background-image: url('images/bg1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+#overlay {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 250px;
+    bottom: 0;
+    background-color: rgba(88, 86, 86, 0.5);
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 80%;
+    left: 0px;
+    right: auto;
+    margin: auto;
+    z-index: 2;
+    padding: 20px;
+    color: white; 
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: width 0.3s; /* Smooth transition for width change */
+}
+
+.sidenav.collapsed {
+    width: 50px; /* Width when collapsed */
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: padding 0.3s; /* Smooth transition for padding change */
+}
+
+.sidenav.collapsed a {
+    padding: 6px 8px; /* Adjust padding when collapsed */
+    font-size: 20px; /* Adjust font size when collapsed */
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+    transition: margin-left 0.3s; /* Smooth transition for margin change */
+}
+
+.sidenav.collapsed + .main {
+    margin-left: 50px; /* Adjust margin when sidenav is collapsed */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
