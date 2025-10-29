@@ -1,5 +1,5 @@
 # Project-AD
 Alberta High School learning and tips at your fingertips
 
-Made by two (2) IB Diploma aka Full IB students.
+A CAS Project that aims to benefit the local school community here in Alberta
 # Under Construction by Devin X and Ambrose W
