@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+        </script>
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Physics 20/IB</title>
+
+            <style>
+            body {
+            background-image: url('../images/object 277.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            }
+            </style>
+
+    </head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+
+    <div id="overlay"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html" style="color: white;">Home</a>
+        <a href="about.html"style="color: white;">About</a>
+        <a href="subjects.html"style="color: white;">Subjects</a>
+        <a href="tips.html"style="color: white;">Tips</a>
+        <a href="contact.html"style="color: white;">Contact</a>
+    </div>
+    <div id="mainContent" class = "main">
+        <div class = "content-wrapper">
+
+            <h1>Physics 20</h1>
+
+            <h2>Prerequisite: Science 10</h2>
+
+            <h3>Overview:</h3>
+            <p>It is a very fun subject about discovering how this world work.
+                The problem is that it is also not the easiest science ever.
+                <br>
+                <br>
+                But you will survive. Proof: The authors did not learn a single bit in advance and 
+                spent 1 hrs max per day on physics and got high 90s in the end.
+                <br>
+                <br>
+                You will learn about dynamics (Gravity, Three laws of Newton's, Circular Motion)
+                and waves (Simple Harmonic Motion, Waves) in Physics 20/IB.
+                <br>
+                <br>
+                When you find some comcept that you don't know why (eg: Ok I know how to use the formula, but Why on earth is \(F = ma\)?)
+                Gemini/ an ai you like would be your best friend. I would try to explain each formula here, but 
+                as you may see, I am not the smartest student ever so there would be formulas I left unexplained. 
+                That would be because of: 1, I forgot to explain that. OR 2, It is such a pain to explain the formula That
+                your best bet is just to memorize it.
+                <br>
+                <br>
+                Well, first thing you need to learn in physics, is that sometimes memorization 
+                is better than understanding. If you can memorize and use a formula properly, 
+                you are good.
+                <br>
+                <br>
+                Second thing (I suppose I should leave this for future, but I fear that I would forget to mention it): 
+                Unit Analysis save lifes. (Eg: When you see 1 newton, please also know that it is also 1 \(kgm/s^2\))
+                <br>
+                <br>
+                Was I yapping to much?
+                <br>
+                <br>
+                Anyways:
+                <br>
+                <i>"Welcome to hell". -2025, Mr. Hornes, Sir Winston Churchill High School</i>
+
+
+            </p>
+
+            <h1>Under a lot of construcions</h1>
+
+
+
+
+        </div>
+    </div>
+
+        <script>
+    function toggleNav() {
+        const nav = document.getElementById("mySidenav");
+        const content = document.getElementById("mainContent");
+        const overlay = document.getElementById("overlay");
+
+        // Check if the sidebar is currently NOT closed
+        if (!nav.classList.contains("closed")) {
+            // --- COLLAPSE ---
+            nav.classList.add("closed");
+            content.classList.add("shifted");
+            overlay.classList.add("shifted-overlay");
+        } else {
+            // --- EXPAND ---
+            nav.classList.remove("closed");
+            content.classList.remove("shifted");
+            overlay.classList.remove("shifted-overlay");
+        }
+    }
+    </script>
+
+</body>
+</html>

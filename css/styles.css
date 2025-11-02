@@ -1,4 +1,4 @@
-    #overlay { /* Currently this css file is broken */
+    #overlay {
     position: fixed; /* Sit on top of the page content */
     width: 80%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
@@ -94,4 +94,26 @@
             background: none;
             border: none;
             color: #fff; 
+        }
+
+
+        a:link {
+        color: rgb(131, 255, 131);
+        background-color: transparent;
+        text-decoration: none;
+        }
+        a:visited {
+        color: rgb(131, 255, 131);
+        background-color: transparent;
+        text-decoration: none;
+        }
+        a:hover {
+        color: rgb(26, 255, 0);
+        background-color: transparent;
+        text-decoration: underline;
+        }
+        a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
         }
