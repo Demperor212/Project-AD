@@ -21,7 +21,7 @@
 
             <style>
             body {
-            background-image: url('../images/object 277.webp');
+            background-image: url('../images/azurlane2.png');
             background-repeat: no-repeat;
             background-attachment: fixed;  
             background-size: cover;
@@ -67,9 +67,9 @@
                 <br>
                 At some point during your reading of this website, and although it is our intention to prevent it,
                 you will likely and inevitably stumble upon a concept of which you cannot find an answer to the <i>why</i>
-                of the concept. <i>Why</i> is gravity 9.81m/s<sup>2</sup>? <i>Why</i> am I taking Physics? For these questions,
-                know that it is very likely that either the developers themselves had the same questions, they could not answer it
-                themselves, or both.
+                of the concept. <i>Why</i> is gravity 9.81m/s<sup>2</sup>? <i>Why</i> \( F = ma\)? For these questions, you can 
+                try to use ai to answer them. Just know that you will inevitably stumble upon something you could not understand even
+                with ai. It is normal. You just haven't learnt the way to prove it, its ok, leave it for now and memorize it.
                 <br>
                 <br>
                 (In the case of why the developers took Physics, neither of them know)
@@ -78,6 +78,11 @@
                 <i>Important note:</i> In Physics 20 and 30, memorization of formulas are important. Although you may be given a
                 formula sheet, sometimes there are "shortcut" formulas of which may not be on the formula sheet. Therefore,
                 it is in your best interest to try to memorize any formulas that appear.
+                <br>
+                <br>
+                (That was the other dev's edit, which kinda got my point wrong. But yes, memorizing shortcuts are important, there is just 
+                not many shortcuts in total if any) What I was trying to say is, when you don't understand something, its ok, if you know 
+                how to memorize it and how to use it, you will get mark. And if you get mark, it is good.
                 <br>
                 <br>
                 <i>Important note:</i> Unit analysis may save your life. This is knowing the exact, basic units behind a derived
@@ -96,6 +101,85 @@
 
             </p>
 
+            <p>Physics 20 and 20IB goes over those topics:
+                (Sorry for being vague, I could not find my phyiscs 20 notes, will be more organized once I find them)
+                <a href="#Vectors" class="scroll-button">Vectors,</a>
+                <a href="#Newton" class="scroll-button">Newtonian Mechanics (Newton's three laws, gravity, etc.),</a>
+                <a href="#Circular" class="scroll-button">Circular Motion,</a>
+                <a href="#Energy" class="scroll-button">Energy, </a>
+                <a href="#SHM" class="scroll-button">Simple Harmonic Motion </a> and
+                <a href="#Waves" class="scroll-button">Waves </a>
+                Where Vectors is easier than Newton's, which is easier than Energy, which is easier than
+                Circular Motion, which is easier than SHM and waves
+                <br>
+                <br>
+                Everything that is not waves is interconnected; SHM and waves are interconnected
+            
+            </p>
+
+
+            <section id="Vectors">
+                <h2>Vectors</h2>
+                <p>(To learn this, I assume you are: 1, human; 2, understand basic trigonomtery and what a right triangle is)</p>
+                <p>I could finish this part up in one paragraph:
+                    <br>
+                    <br>
+                    This is, however, also really important, the foundation of all phyiscs I should say.
+                    <br>
+                    <br>
+                    First, what is a vector?
+                    <br>
+                    <br>
+                    A vector is a value with direction. Eg: Devin is running at 100km/h towards east. If I say: 
+                    Devin is running at 100km/h, this is not a vector. If I say: Devin is running towards east, 
+                    this is also not a vector.
+                    <br>
+                    <br>
+                    A scalar is just a value. Eg: Devin is running at 100km/h.
+                    <br>
+                    <br>
+                    <h2>Example of Vectors and Scalars</h2>
+                    <table style="width:100%">
+                    <tr>
+                        <th>Vectors</th>
+                        <th>Scalars</th>
+                    </tr>
+                    <tr>
+                        <td>Velocity</td>
+                        <td>Speed</td>
+                    </tr>
+                    <tr>
+                        <td>Displacement</td>
+                        <td>Distance</td>
+                    </tr>
+                    <tr>
+                        <td>Force</td>
+                        <td>\(\left| Force \right| \)</td>
+                    </tr>
+                    <tr>
+                        <td>n/a</td>
+                        <td>Energy</td>
+                    </tr>
+                    </table>
+                    <br>
+                    <br>
+                    When a vector is straight north, south, east or west, we are happy, but when a vector is slanted, 
+                    we are sad because a lot of formulas we use must make sure every value is in the same 1D space. 
+                    When we are sad, we want to break down the slanted vector into components (x component and y component)
+                    <br>
+                    <br>
+                    When we break it down into x and y components, it is really easy to analyze two different directions and 
+                    then put them back together.
+                    <br>
+                    <br>
+                    If you need a more detailed explaination, check out: 
+                    <a href="https://www.khanacademy.org/science/ap-college-physics-1/xf557a762645cccc5:kinematics/xf557a762645cccc5:scalars-and-vectors-in-1d/a/scalars-and-vectors"> 1D Vectors</a>
+                    and <a href="https://www.khanacademy.org/science/ap-college-physics-1/xf557a762645cccc5:kinematics/xf557a762645cccc5:motion-in-2d/a/what-are-velocity-components"> 2D Vectors</a>
+                    
+                </p>
+
+            </section>
+
             <h1>Under a lot of construction</h1>
 
 
@@ -104,7 +188,7 @@
         </div>
     </div>
 
-        <script>
+    <script>
     function toggleNav() {
         const nav = document.getElementById("mySidenav");
         const content = document.getElementById("mainContent");
