@@ -305,68 +305,39 @@
                         </div>
                         
                         <div class="step">
-                        <strong>3. Add the square of half the linear coefficient.</strong>
+                        <strong>3. Within the brackets, add and subtract the square of half of \(frac{b}{a}\)</strong>
                         <p>
-                            Take half of \(\dfrac{b}{a}\), which is \(\dfrac{b}{2a}\), square it to get \(\dfrac{b^2}{4a^2}\). Add this to both sides:
-                        </p>
-                        <p>
-                            \[x^2 + \frac{b}{a}x + \frac{b^2}{4a^2} = -\frac{c}{a} + \frac{b^2}{4a^2}\]
+                            \[a(x^2 + \frac{b}{a}x + (\frac{b}{2a})^2 - (\frac{b}{2a})^2) + c = 0}\]
                         </p>
                         </div>
-                        
-                        <div class="step">
-                        <strong>4. Recognize the perfect square on the left.</strong>
-                        <p>
-                            The left side becomes a perfect square trinomial:
-                        </p>
-                        <p>
-                            \[\left(x + \frac{b}{2a}\right)^2 = -\frac{c}{a} + \frac{b^2}{4a^2}\]
-                        </p>
-                        </div>
-                        
-                        <div class="step">
-                        <strong>5. Simplify the right-hand side.</strong>
-                        <p>
-                            Put the right-hand side over a common denominator \(4a^2\):
-                        </p>
-                        <p>
-                            \[ -\frac{4ac}{4a^2} + \frac{b^2}{4a^2} = \frac{b^2 - 4ac}{4a^2}\]
-                        </p>
-                        <p>
-                            So we have:
-                        </p>
-                        <p>
-                            \[\left(x + \frac{b}{2a}\right)^2 = \frac{b^2 - 4ac}{4a^2}\]
-                        </p>
-                        </div>
-                        
-                        <div class="step">
-                        <strong>6. Take square roots and solve for \(x\).</strong>
-                        <p>
-                            Take square roots of both sides (remember \(\pm\)):<
-                        </p>
-                        <p>
-                            \[x + \frac{b}{2a} = \pm \frac{\sqrt{b^2 - 4ac}}{2|a|}\]
-                        </p>
-                        <p>
-                            Because \(|a|\) equals \(a\) when \(a>0\) and \(-a\) when \(a<0\), it is common to write:
-                        </p>
-                        <p>
-                            \[x = -\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a}\]
-                        </p>
-                        <p>
-                            Combining the terms gives the quadratic formula:
-                        </p>
-                        <p>
-                            \[\boxed{\;x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}\;}\]
-                        </p>
 
+                        <div class="step">
+                        <strong>4. Move the \((\frac{b}{2a})^2\) from within the brackets to outside the brackets by multplying it by \(a\)</strong>
+                        <p>
+                            \[a(x^2 + \frac{b}{a}x + (\frac{b}{2a})^2) - (\frac{ab}{2a})^2 + c = 0}\]
+                        </p>
+                        </div>
+
+                        <div class="step">
+                        <strong>5. The terms within the brackets should now be a perfect square trinomial, or a number that can be expressed as \((x + h)^2\)</strong>
+                        <p>
+                            \[a(x + h)^2 + (\frac{-ba}{2a})^2 + c = 0}\]
+                        </p>
+                        </div>
+
+                        <div class="step">
+                        <strong>6. When you actually have numbers, \((\frac{-ba}{2a})^2 + c\) will just become one number, known as \(k\). And so in the end, you get:</strong>
+                        <p>
+                            \[a(x + h)^2 + k = 0\]
+                        </p>
+                        </div>
+                        <br>
                         <p><i>You will be using this so so so so so so much both developers cannot stress this enough.</i></p>
-
-                        <p>
+                        <br>
+                        <p><b>
                             But let's look at completing the square in practice.
-                        </p>
-                            
+                        </b></p>
+                        
                         </div>
                         </div>
                     </section>
