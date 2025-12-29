@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tips</title>
+    </head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+
+    <div id="overlay"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html" style="color: white;">Home</a>
+        <a href="about.html"style="color: white;">About</a>
+        <a href="subjects.html"style="color: white;">Subjects</a>
+        <a href="tips.html"style="color: white;">Tips + Resources</a>
+        <a href="contact.html"style="color: white;">Contact</a>
+    </div>
+    <div id="mainContent" class = "main">
+        <div class = "content-wrapper">
+
+            <h1>Is my grade enough for IB?</h1>
+            <p>
+                Disclaimer: This is based on anecdotal experience.
+                <br>
+                <br>
+                For Mathematics: If you are struggling (Lower than low 90s) in grade 9 math, do not choose IB math.
+                <br>
+                Rationale: Regular math is significantly slower in pace than IB math: You will have one free semester free of math; 
+                For IB you will have consecutive math every day until the end of grade 11 (If you are Math Standard Level), until grade 12 (If you are Math High Level). 
+                You will learn Math 31, and 35 if you are in HL. Those are calculus and are not required for regular programs.
+                <br>
+                HOWEVER: If you want to go into any sort of engineering, science or math in university, ignore all of the above: You HAVE TO have math 31 to 
+                be even considered into most of these programs. You can take regular math 31 but IB will give you university credits so why not.
+                <br>
+                <br>
+                For Science: If you are struggling (Lower than low 90s) in grade 10, do not choose IB sciences.
+                <br>
+                <br>
+                For Social Studies: If you are dead (lower than low 80s) in grade 10, do not choose IB World History (Aka IB Social Studies)..
+                <br>
+                (If you are that bad the teachers would probbaly not give you recommendation anyways, so if a teacher decided to 
+                not give you recommendation, don't fret because they are saving you from a fail in the subject)
+                <br>
+                <br>
+                For English: I have no say in this yet, as my English IB HL will not start until January. Since me, an English as second language person 
+                who just graduated from ELL in late grade 9, can get admissioned into ELA IB (Mid 80s average), I think it might not be too hard??? I will give you update once 
+                I have one.
+                <br>
+            </p>
+
+
+        </div>
+    </div>
+
+        <script>
+    function toggleNav() {
+        const nav = document.getElementById("mySidenav");
+        const content = document.getElementById("mainContent");
+        const overlay = document.getElementById("overlay");
+
+        // Check if the sidebar is currently NOT closed
+        if (!nav.classList.contains("closed")) {
+            // --- COLLAPSE ---
+            nav.classList.add("closed");
+            content.classList.add("shifted");
+            overlay.classList.add("shifted-overlay");
+        } else {
+            // --- EXPAND ---
+            nav.classList.remove("closed");
+            content.classList.remove("shifted");
+            overlay.classList.remove("shifted-overlay");
+        }
+    }
+    </script>
+
+</body>
+</html>
