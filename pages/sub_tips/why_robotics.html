@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="/Project-AD/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tips</title>
+    </head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+
+    <div id="overlay"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html" style="color: white;">Home</a>
+        <a href="about.html"style="color: white;">About</a>
+        <a href="subjects.html"style="color: white;">Subjects</a>
+        <a href="tips.html"style="color: white;">Tips + Resources</a>
+        <a href="contact.html"style="color: white;">Contact</a>
+    </div>
+    <div id="mainContent" class = "main">
+        <div class = "content-wrapper">
+
+            <h1>Should I do robotics?</h1>
+            <p>
+                How much free time do you have?
+                <br>
+                <br>
+                If you have (confidently), 6+ hours of free time per week, 8+ hours of free time on a good day, and 10+ hours of free time when you really need that, robotics is good for you.
+                <br>
+                <br>
+                It is fun, it is good for university applications (hopefully), and you get to engineer.
+                <br>
+                <br>
+                If you have less than that amount of free time, don't do it. It is very time consuming to do robotics.
+                <br>
+                <br>
+                Churchill does VEX robotics, not FTC/FRC. It is a different competition, but basically the same: You have a different competition theme each year, you build your robot for the competition that year, you go compete against other teams and hopefully don't get knocked out in the first round. You go back home to improve your bot, you go competition again...
+                <br>
+                <br>
+                This loop continues until provincial, which you need to be qualified in order to compete in it.
+                <br>
+                <br>
+                In provincial you try to win and qualify for worlds.
+                <br>
+                <br>
+                You can also qualify from big events spreaded out around the world too.
+                <br>
+                <br>
+                That is VEX robotics in a nutshell.
+                <br>
+                <br>
+                In robotics there are usually these roles: Builder, Coder, Driver. If your team has a lot of people there could also be people specialized in notebooking (recording what the team has done), cadder (CAD the team's idea out), designer, etc.
+                <br>
+                <br>
+                You will develop a really close relationship with your team.
+
+
+            </p>
+
+
+        </div>
+    </div>
+
+        <script>
+    function toggleNav() {
+        const nav = document.getElementById("mySidenav");
+        const content = document.getElementById("mainContent");
+        const overlay = document.getElementById("overlay");
+
+        // Check if the sidebar is currently NOT closed
+        if (!nav.classList.contains("closed")) {
+            // --- COLLAPSE ---
+            nav.classList.add("closed");
+            content.classList.add("shifted");
+            overlay.classList.add("shifted-overlay");
+        } else {
+            // --- EXPAND ---
+            nav.classList.remove("closed");
+            content.classList.remove("shifted");
+            overlay.classList.remove("shifted-overlay");
+        }
+    }
+    </script>
+
+</body>
+</html>
