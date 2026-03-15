@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="/Project-AD/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Study habits</title>
+    </head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+
+    <div id="overlay"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html" style="color: white;">Home</a>
+        <a href="about.html"style="color: white;">About</a>
+        <a href="subjects.html"style="color: white;">Subjects</a>
+        <a href="tips.html"style="color: white;">Tips + Resources</a>
+        <a href="contact.html"style="color: white;">Contact</a>
+    </div>
+    <div id="mainContent" class = "main">
+        <div class = "content-wrapper">
+
+            <h1>How do I study effectively?</h1>
+            <p>
+                Grade 9 is a big transition from middle school. The workload increases, and the expectations are higher. 
+                Here are some study habits that actually work (based on experience):
+                <br>
+                <br>
+                <strong>1. Don't cram.</strong>
+                <br>
+                Cramming might work for a quiz, but it will fail you on unit tests and finals. Your brain needs time to process information. 
+                Study a little bit every day, even if it's just 20-30 minutes reviewing notes or doing a few practice questions.
+                <br>
+                <br>
+                <strong>2. Active recall > Passive reading.</strong>
+                <br>
+                Re-reading your notes over and over is NOT effective. Instead, close your notebook and try to explain the concept out loud 
+                (or write it down from memory). If you can't explain it without looking, you don't know it yet.
+                <br>
+                <br>
+                <strong>3. Practice questions are your best friend.</strong>
+                <br>
+                Especially for math and sciences. Doing textbook problems, past exams, or online quizzes will help you identify gaps in your understanding. 
+                When you get a question wrong, don't just move on—figure out WHY you got it wrong.
+                <br>
+                <br>
+                <strong>4. Use your planner (or a digital calendar).</strong>
+                <br>
+                Write down all your assignments, tests, and deadlines. Break big projects into smaller tasks with their own deadlines. 
+                This prevents the "I forgot that was due tomorrow" panic.
+                <br>
+                <br>
+                <strong>5. Know when to ask for help.</strong>
+                <br>
+                If you're stuck on something for more than 15-20 minutes, it's time to ask a teacher, friend, or look up a tutorial video. 
+                Don't let confusion pile up.
+                <br>
+                <br>
+                <strong>6. Take breaks.</strong>
+                <br>
+                Your brain isn't a machine. Study for 25-50 minutes, then take a 5-10 minute break. Walk around, stretch, grab water. 
+                Come back refreshed.
+                <br>
+                <br>
+                <strong>7. Sleep matters.</strong>
+                <br>
+                Pulling all-nighters is counterproductive. Your brain consolidates memories during sleep. Getting 7-9 hours of sleep 
+                will help you retain what you studied and perform better on tests.
+                <br>
+                <br>
+                Remember: Everyone struggles sometimes. The key is to keep trying different strategies until you find what works for YOU.
+                
+            </p>
+
+
+        </div>
+    </div>
+
+        <script>
+    function toggleNav() {
+        const nav = document.getElementById("mySidenav");
+        const content = document.getElementById("mainContent");
+        const overlay = document.getElementById("overlay");
+
+        // Check if the sidebar is currently NOT closed
+        if (!nav.classList.contains("closed")) {
+            // --- COLLAPSE ---
+            nav.classList.add("closed");
+            content.classList.add("shifted");
+            overlay.classList.add("shifted-overlay");
+        } else {
+            // --- EXPAND ---
+            nav.classList.remove("closed");
+            content.classList.remove("shifted");
+            overlay.classList.remove("shifted-overlay");
+        }
+    }
+    </script>
+
+</body>
+</html>
