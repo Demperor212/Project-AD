@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        window.MathJax = {
+        // This is the configuration for the Expression Explorer Menu
+        options: {
+            menu: {
+            // Set 'help' to false to hide the Help/About item
+            help: false
+            }
+        }
+        };
+        </script>
+
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+
+        <title> Math 31</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    
+        <style>
+        body {
+        background-image: url('../images/ace-combat-miku.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        }
+        </style>
+    
+        <link rel="stylesheet" href="../css/styles.css">
+
+    </head>
+<body>
+
+    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+
+    <div id="overlay"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html"style="color: white;">Home</a>
+        <a href="about.html"style="color: white;">About</a>
+        <a href="subjects.html"style="color: white;">Subjects</a>
+        <a href="tips.html"style="color: white;">Tips + Resources</a>
+        <a href="contact.html"style="color: white;">Contact</a>
+    </div>
+
+    <div id="mainContent" class = "main">
+        <div class = "content-wrapper">
+
+            <h1><i>Project AD</i> Math 31 Section</h1>
+            
+            <h2>What is Math 31?</h2>
+            <p>Math 31 is a calculus course that serves as an introduction to differential and integral calculus. 
+              It is typically taken after completing Math 20 and is often a prerequisite for more advanced mathematics courses.
+            </p>
+            
+            <br>
+            
+            <h2>About This Page</h2>
+            <p><i>Note: This section primarily contains tips and key concepts for Math 31, rather than complete teaching materials. 
+              The goal is to provide helpful insights and summaries to supplement your learning.</i>
+            </p>
+            <br>
+
+            <h2>Table of Contents</h2>
+            <p>
+                <a href="#second-derivative-tips" class="scroll-button">Second Derivative Tips</a>
+            </p>
+            <br>
+
+            <section id="second-derivative-tips">
+            <h1>Second Derivative Tips</h1>
+            <p>The second derivative measures the instantaneous curvature at a point, indicating whether and how the slope changes before and after that point.</p>
+            <br>
+            
+            <h2>Key Concepts</h2>
+            <ul>
+                <li><strong>Second derivative equals zero:</strong> When \( f''(x) = 0 \) at a point, this indicates that the first derivative \( f'(x) \) is flat (has a horizontal tangent) at that point.</li>
+                <li><strong>Flat first derivative:</strong> If \( f'(x) \) is flat at a point, it means the original function \( f(x) \) has no change in slope at that point, indicating no concavity at that specific location.</li>
+                <li><strong>Concavity around the point:</strong> As long as the first derivative is not linear, there will be concavity both before and after this point on the original function \( f(x) \).</li>
+                <li><strong>Types of points:</strong> At such a point on \( f(x) \), you either have:
+                    <ul>
+                        <li>A very flat vertex (like in \( x^4 \)), or</li>
+                        <li>A point of inflection</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+
+            <h2>The Second Derivative Test</h2>
+            <p>If the first derivative reveals a critical point (where \( f'(x) = 0 \)), the second derivative can determine the concavity at that vertex (how the slope changes before and after):</p>
+            <ul>
+                <li><strong>If \( f''(x) > 0 \):</strong> The point is a <strong>minimum</strong>. This is because the change in slope is positive (the "velocity" of the slope is positive). Any "bowl" shape indicates that the slope is consistently increasing.</li>
+                <li><strong>If \( f''(x) < 0 \):</strong> The point is a <strong>maximum</strong>. The change in slope is negative, meaning the slope is consistently decreasing (an inverted bowl shape).</li>
+            </ul>
+            <br>
+
+            <h2>Exception to the Second Derivative Test</h2>
+            <p><strong>Important:</strong> If both the slope (\( f'(x) \)) and the concavity (\( f''(x) \)) are zero at a point, then there is no change in slope at that location on the original function. In this case, the second derivative test fails, and you must manually apply the <strong>first derivative test</strong> to determine the nature of the critical point.</p>
+            <br>
+
+            <h2>Summary</h2>
+            <p>In essence, any "bowl" shaped curve (whether opening upward or downward) indicates that the slope is either consistently increasing or consistently decreasing. The second derivative test leverages this property to classify critical points efficiently, except in cases where both derivatives vanish simultaneously.</p>
+            </section>
+
+            <br>
+            <br>
+            
+            <p><i>This page is under construction. More content will be added over time.</i></p>
+
+        </div>
+    </div>
+
+    <script>
+    function toggleNav() {
+        const nav = document.getElementById("mySidenav");
+        const content = document.getElementById("mainContent");
+        const overlay = document.getElementById("overlay");
+
+        // Check if the sidebar is currently NOT closed
+        if (!nav.classList.contains("closed")) {
+            // --- COLLAPSE ---
+            nav.classList.add("closed");
+            content.classList.add("shifted");
+            overlay.classList.add("shifted-overlay");
+        } else {
+            // --- EXPAND ---
+            nav.classList.remove("closed");
+            content.classList.remove("shifted");
+            overlay.classList.remove("shifted-overlay");
+        }
+    }
+    </script>
+
+
+</body>
+</html>
