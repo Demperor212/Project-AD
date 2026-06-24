@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Math 10C</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    body {
+    background-image: url('../images/ace-combat-miku.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+    </style>
+
+   <link rel="stylesheet" href="../css/styles.css">
+
+    </head>
+<body>
+
+    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+
+    <div id="overlay"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="../index.html"style="color: white;">Home</a>
+        <a href="about.html"style="color: white;">About</a>
+        <a href="subjects.html"style="color: white;">Subjects</a>
+        <a href="tips.html"style="color: white;">Tips + Resources</a>
+        <a href="contact.html"style="color: white;">Contact</a>
+    </div>
+
+    <div id="mainContent" class = "main">
+        <div class = "content-wrapper">
+
+            <h1><i>ChurchillDoc</i> Physics 30 and 30IB Section</h1>
+            
+            <h2>What is Physics 30/30IB?</h2>
+            <p>
+              Physics 30 is the final level course of physics. Its prerequisite is Physics 20, and for Physics 30IB, the prerequisite is of course Physics 20IB.
+              <i>Developers' (both of them) note: Neither of us took Physics IB HL, so all IB content that we cover is ONLY what we know from SL. This may change in the future if the site expands.</i>
+            </p>
+            <br>
+            <h2>What's in Physics 30/30IB?</h2>
+            <p>Physics 30 goes over  main subjects; 
+                <a href="#momentum" class="scroll-link">momentum,</a>
+                <a href="#electrostatics" class="scroll-link"> electrostatics,</a>
+                <a href="#magnetism" class = "scroll-link"> magnetism,</a>
+                <a href="#EMR" class = "scroll-link"> electromagnetic radiation (EMR),</a>
+                <a href="#optics" class = "scroll-link"> optics,</a>
+                <a href="#nuclear" class = "scroll-link"> nuclear physics, </a>
+                and<a href="#atomic" class = "scroll-link"> atomic physics.</a>
+            </p>
+            <br>
+
+          <section id="momentum>
+            <h1>Momentum</h1>
+            </section>
+
+          <br>
+          <br>
+          <br>
+
+          <section id="electrostatics">
+            <h1>Electrostatics</h1>
+              <p>Electrostatics is </p>
+          </section>
+
+          <br>
+          <br>
+          <br>
+
+          <section id="magnetism">
+            <h1>Magnetism</h1>
+          </section>
+
+          <br>
+          <br>
+          <br>
+
+          <section id="optics">
+            <h1>Optics</h1>
+            <br>
+            <p><i>I don't like optics very much.</i></p>
+            <br>
+            <p>Firstly some, basic term you need to understand is <i>rectilinear propagation</i></p>
+            <dl>
+              <dt>Light travels in a straight line in a uniform medium</dt>
+              <br>
+              <dt>It is explained by the ray model, which is that light "rays" propogate from a light source outwards, like a child's drawing of a sun. <i>You know exactly what I'm talking about.</i></dt>
+              <br>
+              <dt>Light is represented as a straight line with an arrow for direction.</dt>
+              <br>
+              <dt>The ray model works for both wave and particle models of light.</dt>
+            </dl>
+            <br>
+            <br>
+            There is a lot of evidence for that light rays travel in a straight line regardless of whether they are wave or particle, but mainly the ones you can remember is that: 
+            light can't bend around a corner (you will not see light around a corner as you hear sounds around a corner), light can be blocked by chalk and dust (particles in the air), and 
+            the pinhole camera (shown below).
+            <br>
+            <img src="../images/pinhole-camera.png">
+            <br>
+            <p>As we can see, the light rays will go through the small hole at the front of the camera and appear inverted. If you kind of...well, think, about it in 3D terms you can visualize the exact same thing, which is that the image will appear inverted on all three axes.</p>
+            <br>
+            <br>
+            <h2 style = "text-align: center;">Mirrors</h2>
+            <p><i>I despise this with a passion~</i></p>
+            <br>
+            <p>A normal mirror reflects the light</p>
+          </section>
+
+          <br>
+          <br>
+          <br>
+          
+          <section id="EMR">
+            <h1>Electromagnetic radiation (EMR)</h1>
+          </section>        
+
+          <br>
+          <br>
+          <br>
+
+          <section id="nuclear">
+            <h1>Nuclear Physics</h1>
+          </section>    
+
+          <br>
+          <br>
+          <br>
+
+          <section id="atomic">
+            <h1>Atomic Physics</h1>
+          </section>    
+          
+          
+
+        </div>
+    </div>
+
+    <script>
+    function toggleNav() {
+        const nav = document.getElementById("mySidenav");
+        const content = document.getElementById("mainContent");
+        const overlay = document.getElementById("overlay");
+
+        // Check if the sidebar is currently NOT closed
+        if (!nav.classList.contains("closed")) {
+            // --- COLLAPSE ---
+            nav.classList.add("closed");
+            content.classList.add("shifted");
+            overlay.classList.add("shifted-overlay");
+        } else {
+            // --- EXPAND ---
+            nav.classList.remove("closed");
+            content.classList.remove("shifted");
+            overlay.classList.remove("shifted-overlay");
+        }
+    }
+    </script>
+
+</body>
+</html>
 
