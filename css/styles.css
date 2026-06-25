@@ -181,7 +181,6 @@
                 position: fixed;
                 bottom: 1%;
                 left: 50%;
-                transform: translateX(-50%);
                 z-index: 2001;
                 font-size: 24px;
                 cursor: pointer;
@@ -189,6 +188,8 @@
                 border: none;
                 color: #fff;
             }
+
+            
 
             .content-wrapper {
                 width: 90%;
