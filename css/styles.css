@@ -33,7 +33,7 @@
             height: 100%;
             width: 160px;
             position: fixed;
-            z-index: 1002;
+            z-index: 1;
             top: 0;
             left: 0;
             background-color: #1e1d1d;
@@ -68,11 +68,6 @@
         .sidenav.closed {
             width: 0; /* Shrink the sidebar */
             padding-top: 40px; /* Keep padding, but links will be hidden by overflow-x: hidden */
-        }
-
-        #overlay {
-            left: 250px;
-            z-index: 1000;
         }
 
         #overlay.shifted-overlay {
@@ -133,13 +128,13 @@
             .sidenav {
                 width: 100%;
                 height: 0;
-                position: fixed;
-                z-index: 2000;
                 top: auto;
+                z-index:1;
                 bottom: 0;
                 left: 0;
                 padding-top: 0;
                 overflow: hidden;
+                background-color: #1e1d1d;
                 transition: height 0.3s ease, width 0.3s ease;
             }
 
@@ -147,6 +142,7 @@
                 width: 100%;
                 height: 0;
                 padding-top: 0;
+                background-color: #1e1d1d;
             }
 
             .sidenav:not(.closed) {
@@ -174,7 +170,6 @@
                 left: 0;
                 width: 100%;
                 z-index: 1500;
-                display: none;
             }
 
             #overlay.shifted-overlay {
@@ -184,16 +179,9 @@
             }
 
             .toggle-btn {
-                position: fixed;
-                bottom: 10px;
+                top: 50%;
                 left: 50%;
-                transform: translateX(-50%);
-                z-index: 2001;
-                font-size: 24px;
-                cursor: pointer;
-                background: none;
-                border: none;
-                color: #fff;
+                transform: translate(-50%, -50%);
             }
 
             .content-wrapper {
