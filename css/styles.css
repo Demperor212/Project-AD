@@ -103,12 +103,12 @@
         text-decoration: none;
         }
         a:visited {
-        color: rgb(131, 255, 131);
+        color: rgb(218, 131, 255);
         background-color: transparent;
         text-decoration: none;
         }
         a:hover {
-        color: rgb(26, 255, 0);
+        color: rgb(111, 138, 247);
         background-color: transparent;
         text-decoration: underline;
         }
@@ -120,4 +120,30 @@
 
         table, th, td {
             border:1px solid black;
+        }
+
+
+
+       @media (orientation: portrait) {
+        /* 1. Reset overlay so it doesn't shoot off the right side of the phone */
+        #overlay, #overlay.shifted-overlay {
+            left: 0 !important;
+            width: 100% !important;
+        }
+
+        /* 2. Push main content to full width since screen is narrow */
+        .main, .main.shifted {
+            margin-left: 0 !important;
+            padding: 40px 15px 15px 15px; /* Added top padding so text doesn't hide under toggle button */
+        }
+
+        /* 3. Force the sidebar to hide by default in portrait mode */
+        .sidenav {
+            width: 0;
+        }
+
+        /* 4. Ensure content wrapper spans nicely on small screens */
+        .content-wrapper {
+            width: 95% !important;
+        }
         }
