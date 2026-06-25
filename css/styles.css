@@ -174,11 +174,13 @@
                 left: 0;
                 width: 100%;
                 z-index: 1500;
+                display: none;
             }
 
             #overlay.shifted-overlay {
                 left: 0;
                 width: 100%;
+                display: block;
             }
 
             .toggle-btn {
