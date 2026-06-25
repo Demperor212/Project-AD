@@ -184,9 +184,16 @@
             }
 
             .toggle-btn {
-                top: 50%;
+                position: fixed;
+                bottom: 10px;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateX(-50%);
+                z-index: 2001;
+                font-size: 24px;
+                cursor: pointer;
+                background: none;
+                border: none;
+                color: #fff;
             }
 
             .content-wrapper {
