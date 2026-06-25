@@ -36,7 +36,7 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #111;
+            background-color: #1e1d1d;
             overflow-x: hidden;
             padding-top: 30px;
             transition: width 0.3s; /* Smooth width change */
@@ -125,25 +125,62 @@
 
 
        @media (orientation: portrait) {
-        /* 1. Reset overlay so it doesn't shoot off the right side of the phone */
-        #overlay, #overlay.shifted-overlay {
-            left: 0 !important;
-            width: 100% !important;
-        }
+            .sidenav {
+                width: 100%;
+                height: 0;
+                top: auto;
+                bottom: 0;
+                left: 0;
+                padding-top: 0;
+                overflow: hidden;
+                transition: height 0.3s ease, width 0.3s ease;
+            }
 
-        /* 2. Push main content to full width since screen is narrow */
-        .main, .main.shifted {
-            margin-left: 0 !important;
-            padding: 40px 15px 15px 15px; /* Added top padding so text doesn't hide under toggle button */
-        }
+            .sidenav.closed {
+                width: 100%;
+                height: 0;
+                padding-top: 0;
+            }
 
-        /* 3. Force the sidebar to hide by default in portrait mode */
-        .sidenav {
-            width: 0;
-        }
+            .sidenav:not(.closed) {
+                width: 100%;
+                height: 75vh;
+                padding-top: 20px;
+                overflow-y: auto;
+            }
 
-        /* 4. Ensure content wrapper spans nicely on small screens */
-        .content-wrapper {
-            width: 95% !important;
-        }
+            .sidenav a {
+                font-size: 22px;
+                padding: 12px 16px;
+            }
+
+            .main {
+                margin-left: 0;
+                padding-bottom: 0;
+            }
+
+            .main.shifted {
+                margin-left: 0;
+            }
+
+            #overlay {
+                left: 0;
+                width: 100%;
+            }
+
+            #overlay.shifted-overlay {
+                left: 0;
+                width: 100%;
+            }
+
+            .toggle-btn {
+                top: auto;
+                bottom: 12px;
+                left: 12px;
+            }
+
+            .content-wrapper {
+                width: 90%;
+                margin: auto;
+            }
         }
