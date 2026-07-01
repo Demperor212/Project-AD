@@ -159,6 +159,7 @@
 
             .toggle-btn {
                 position: fixed;
+                top: auto;
                 bottom: 1%;
                 left: 50%;
                 transform: translateX(-50%);
